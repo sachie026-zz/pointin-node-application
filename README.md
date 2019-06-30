@@ -1,7 +1,7 @@
 # Pointin - Node-Application
 Application to store the places with tags.
 
-Folder details
+Folder/File details
 
 Routes : contains the REST Api for the application,
 Pointin.js : entry point for starting the server,
