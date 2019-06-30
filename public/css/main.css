@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.header {
+  height: 30%;
+  background-color: #bfbfe1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.75rem;
+  color: white;
+  flex-direction: column;
+  position: relative;
+}
+
+.header .header-line {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 0.65rem;
+}
+
+.container-section {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-section > div {
+  /* flex: 1; */
+  margin: 0px 6%;
+  /* margin: 0px 10%; */
+  font-size: 1.5rem;
+  height: 35%;
+  padding: 0px 5%;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  width: 10%;
+  justify-content: center;
+}
+
+.container-section > div:hover {
+  /* flex: 1; */
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.container-add-section {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.container-add-section > div {
+  margin: 0px 5%;
+  font-size: 1.5rem;
+  height: 35%;
+  display: flex; /* flex-direction: column; */
+}
+
+.add-place-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-div {
+  width: 15%;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 25px;
+  /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+}
+
+.location-div > div {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.form-div {
+  width: 25%;
+}
+
+.form-div > div {
+  width: 100%;
+}
+
+.add-place-form input {
+  margin: 10px 0px;
+  width: 100%;
+  padding: 15px;
+}
+
+.add-place-form > input[type="submit"] {
+  background: #404040;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.add-place-form > input[type="submit"]:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+#action-result {
+  color: #81b681;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.header-footer-back {
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem !important;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

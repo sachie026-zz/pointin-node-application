@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <script src="/js/main.js"></script>
+    <!-- <link href="public/css/main.css" /> -->
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        Pointin
+      </div>
+      <div class="header-line">
+        Add place
+      </div>
+      <div class="header-footer-back" onclick="goback()">
+        Back to home
+      </div>
+    </header>
+
+    <section class="container-add-section">
+      <style>
+        .container-section {
+          flex-direction: column;
+        }
+      </style>
+
+      <div class="location-div">
+        <div>
+          City: Pune
+        </div>
+        <div>
+          Location : Bavdhan
+        </div>
+      </div>
+      <div class="form-div">
+        <div class="add-place-form">
+          <span id="action-result"></span>
+          <input type="text" id="placename" placeholder="Place name" />
+          <input type="text" id="tags" placeholder="Provide tags" />
+          <input type="submit" value="Add" onclick="submitPlace()" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Copyright pointin @ 2019
+    </footer>
+  </body>
+</html>
