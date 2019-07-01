@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <script src="/js/main.js"></script>
+    <!-- <link href="public/css/main.css" /> -->
+  </head>
+  <body onload="getAllPlaces()">
+    <header class="header">
+      <div>
+        Pointin
+      </div>
+      <div class="header-line">
+        Add place
+      </div>
+      <div class="header-footer-back" onclick="goback()">
+        Back to home
+      </div>
+    </header>
+
+    <section class="container-all-places-section">
+      <style>
+        .container-section {
+          flex-direction: column;
+        }
+      </style>
+      <div class="posts">
+        <div class="post-card post-header-row">
+          <div class="post-header-col">NAME</div>
+          <!-- <div class="post-header-col">LATTITUDE</div> -->
+          <!-- <div class="post-header-col">LONGITUDE</div> -->
+          <div class="post-header-col">AREA</div>
+          <div class="post-header-col">CITY</div>
+          <div class="post-header-col">TAGS</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Copyright pointin @ 2019
+    </footer>
+  </body>
+</html>

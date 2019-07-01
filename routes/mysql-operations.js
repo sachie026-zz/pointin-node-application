@@ -9,10 +9,11 @@ var con = mysql.createConnection({
 });
 
 function mysqlAction(action, body, callback) {
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
+  // con.connect(function(err) {
+  // if (err) throw err;
+  console.log("Connected!");
 
+  if (action == "addPlace") {
     var sqlq =
       "INSERT INTO places(name, tags) VALUES ('" +
       body.pname +
@@ -27,9 +28,18 @@ function mysqlAction(action, body, callback) {
 
       console.log("1 record inserted");
     });
-  });
+  } else if (action == "getPlaces") {
+    var sqlq = "SELECT * FROM places";
+    con.query(sqlq, function(err, result) {
+      if (result) {
+        callback(result);
+      }
+      if (err) callback(err);
+    });
+  }
+  // });
 
-  con.end();
+  // con.end();
 }
 
 module.exports.mysqlAction = mysqlAction;

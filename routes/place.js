@@ -24,7 +24,12 @@ placeApp.get("/get-places.html", function(req, res) {
 });
 
 placeApp.get("/places", function(req, res) {
-  res.send("No places added");
+  mysqlOperations.mysqlAction("getPlaces", null, function(cres) {
+    console.log("res :", cres);
+    result = cres;
+    res.send(result);
+  });
+  // res.send("No places added");
 });
 
 placeApp.get("*", function(req, res) {
@@ -38,7 +43,7 @@ placeApp.post("/places", function(req, res) {
   mysqlOperations.mysqlAction("addPlace", req.body, function(cres) {
     console.log("res :", cres);
     result = cres;
-    res.send(result);
+    res.status(200).send(result);
   });
 });
 
