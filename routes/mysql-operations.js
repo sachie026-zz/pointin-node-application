@@ -15,10 +15,14 @@ function mysqlAction(action, body, callback) {
 
   if (action == "addPlace") {
     var sqlq =
-      "INSERT INTO places(name, tags) VALUES ('" +
+      "INSERT INTO places(name, tags, lattitude, longitude) VALUES ('" +
       body.pname +
       "', '" +
       body.tags +
+      "', '" +
+      body.lat +
+      "', '" +
+      body.lng +
       "')";
     con.query(sqlq, function(err, result) {
       if (result) {
